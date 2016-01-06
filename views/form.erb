@@ -1,0 +1,93 @@
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css">
+<style>
+  body {
+    padding-top: 40px;
+  }
+</style>
+
+<div class="container" >
+  <h2 class="text-center"> 2C2P Demo </h2>
+  <br/>
+  <form method="post" action=<%= "#{@gateway_url}" %> class="form-horizontal">
+    <div class="form-group">
+      <label for="version" class="col-sm-2 control-label"> Version </label>
+      <div class="col-sm-10">
+        <input type="text" id="version" name="version" value=<%= "#{@version}" %> class="form-control">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="merchant_id" class="col-sm-2 control-label"> Merchant ID </label>
+      <div class="col-sm-10">
+        <input type="text" id="merchant_id" name="merchant_id" value=<%= "#{@merchant_id}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="payment_description" class="col-sm-2 control-label"> Payment Description </label>
+      <div class="col-sm-10">
+        <input type="text" id="payment_description" name="payment_description" value=<%= "#{@payment_description}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="order_id" class="col-sm-2 control-label"> Order ID </label>
+      <div class="col-sm-10">
+        <input type="text" id="order_id" name="order_id" value=<%= "#{@order_id}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="invoice_no" class="col-sm-2 control-label"> Invoice No </label>
+      <div class="col-sm-10">
+        <input id="invoice_no" name="invoice_no" type="text" value=<%= "#{@invoice_no}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="amount" class="col-sm-2 control-label"> Amount </label>
+      <div class="col-sm-10">
+        <input id="amount" name="amount" type="text" value=<%= "#{@amount}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="customer_email" class="col-sm-2 control-label"> Customer Email </label>
+      <div class="col-sm-10">
+        <input type="text" id="customer_email" name="customer_email" value=<%= "#{@customer_email}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="pay_category_id" class="col-sm-2 control-label"> Pay Category ID </label>
+      <div class="col-sm-10">
+        <input type="text" id="pay_category_id" name="pay_category_id" value=<%= "#{@pay_category_id}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="result_url_1" class="col-sm-2 control-label"> Result URL 1 </label>
+      <div class="col-sm-10">
+        <input type="text" id="result_url_1" name="result_url_1" value=<%= "#{@result_url_1}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="result_url_2" class="col-sm-2 control-label"> Result URL 2 </label>
+      <div class="col-sm-10">
+        <input type="text" id="result_url_2" name="result_url_2" value=<%= "#{@result_url_2}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="hash_value" class="col-sm-2 control-label"> Hash Value </label>
+      <div class="col-sm-10">
+        <input type="text" id="hash_value" name="hash_value" value=<%= "#{@hash_value}" %> class="form-control"/>
+      </div>
+    </div>
+
+    <div class="text-center">
+      <button type="Submit" name="btnSubmit" value="Submit" id="btnSubmit" class="btn btn-primary"/> Submit </button>
+    </div>
+  </form>
+</div>
